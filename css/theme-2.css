@@ -1,0 +1,57 @@
+.main {
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(221, 14%, 31%);
+}
+
+/* the theme part (upper part) */
+.theme .select div {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme .select div span.active {
+    background-color: hsl(25, 98%, 40%);
+}
+.theme .select div span:hover {
+    background-color: #f96b5d;
+}
+
+/* the screen part  */
+.screen {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(221, 14%, 31%);
+    caret-color: hsl(221, 14%, 31%);
+}
+
+
+/* the keybad  */
+.keybad {
+    background-color: hsl(0, 5%, 81%);
+    user-select: none;
+}
+.keybad div {
+    
+    background-color:  hsl(45, 7%, 89%);
+    box-shadow: 0 6px hsl(35, 11%, 61%);
+}
+.keybad div:hover {
+    background-color: white;
+}
+.keybad div.del,
+.keybad div.reset {
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 6px hsl(185, 58%, 25%);
+}
+.keybad div.del:hover,
+.keybad div.reset:hover {
+    background-color: #62b5bd;
+}
+.keybad div.equal {
+    color: white;
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 6px hsl(25, 99%, 27%);
+
+}
+.keybad div.equal:hover,
+.keybad div.equal:focus{
+    background-color: #ff8b38;
+}

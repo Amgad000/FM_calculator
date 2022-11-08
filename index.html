@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme-1.css" />
+
+    <!-- google fonts => league spartan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <header>
+      <!-- no header  -->
+    </header>
+    <main class="main">
+      <div class="calc-box">
+        <section class="theme">
+          <div class="logo">calc</div>
+          <div class="select">
+            <p>theme</p>
+            <div>
+              <span class="active" data-theme="one"></span>
+              <span data-theme="two"></span>
+              <span data-theme="three"></span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <input class="screen" type="text" />
+        </section>
+        <section class="keybad">
+          <div class="num">7</div>
+          <div class="num">8</div>
+          <div class="num">9</div>
+          <div class="del">del</div>
+          <div class="num">4</div>
+          <div class="num">5</div>
+          <div class="num">6</div>
+          <div class="operator" data-op="+">+</div>
+          <div class="num">1</div>
+          <div class="num">2</div>
+          <div class="num">3</div>
+          <div class="operator" data-op="-">-</div>
+          <div class="num">.</div>
+          <div class="num">0</div>
+          <div class="operator" data-op="/">/</div>
+          <div class="x operator" data-op="x">x</div>
+          <div class="reset">reset</div>
+          <div class="equal">=</div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    </footer>
+
+    <!-- the script files  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+.main {
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:570px) {
+    .main {
+        height: 667px;
+    }
+}
+.calc-box {
+    width: 540px;
+    height: 720px;
+}
+@media (max-width:570px) {
+    .calc-box {
+        width: 328px;
+        height: 620px;
+    }
+}
+/* the theme part (upper part) */
+.theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    border-radius: 16px;
+}
+.theme .logo {
+    font-size: 44px;
+}
+.theme .select {
+    display: flex;
+    align-items: center;
+}
+.theme .select p {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    bottom: -5px;
+}
+.theme .select div {
+    width: 70px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 16px;
+    counter-reset: numbers;
+    margin-left: 25px;
+}
+.theme .select div span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    counter-increment: numbers;
+    cursor: pointer;
+}
+.theme .select div span::after {
+    content: counter(numbers);
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+/* the screen part  */
+.screen {
+    height: 124px;
+    text-align: right;
+    border-radius: 16px;
+    line-height: 124px;
+    font-size: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 20px 0 25px;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 570px) {
+    .screen {
+        height: 88px;
+        line-height: 88px;
+    }
+}
+
+/* the keybad  */
+.keybad {
+    height: 422px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+    gap: 26px;
+    border-radius: 16px;
+}
+@media (max-width:570px) {
+    .keybad {
+        height: 382px;
+        padding: 24px;
+        gap: 10px;
+    }
+}
+.keybad div {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    text-transform: uppercase;
+    /* box-shadow: 0 6px white; */
+    cursor: pointer;
+}
+.keybad div.reset ,
+.keybad div.equal {
+    width: 226px;
+    height: 60px;
+    grid-column: span 2;
+}
+.keybad div.del ,
+.keybad div.x,
+.keybad div.reset ,
+.keybad div.equal {
+    font-size: 24px;
+}
+
+@media (max-width: 570px) {
+    .keybad div {
+        width: 60px;
+        height: 60px;
+    }
+    .keybad div.reset ,
+    .keybad div.equal {
+        width: 130px;
+        height: 60px;
+    }
+}
